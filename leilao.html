@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Leilão ao vivo</title><link rel="stylesheet" href="leilao.css"><script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script><script src="script_jogadores.js"></script><script src="leilao.js" defer></script></head>
+<body><header><a href="index.html">⚽ LEILÃO DE FUTEBOL</a><span id="roomLabel">Sala</span></header><main>
+<section class="top"><div><small>LEILÃO AO VIVO</small><h1>Dispute os craques</h1><p id="conexao">Conectando...</p></div><div class="saldo"><small>SEU ORÇAMENTO</small><strong id="saldo">€ 500.000.000</strong></div></section>
+<section class="layout"><article class="jogador-atual"><div class="etiqueta">JOGADOR EM LEILÃO</div><div class="avatar" id="avatar">⚽</div><h2 id="nomeJogador">Aguardando leilão...</h2><p id="dadosJogador">O anfitrião iniciará a disputa.</p><div class="lance"><small>MAIOR LANCE</small><strong id="maiorLance">€ 0</strong><span id="maiorLicitante">Nenhum lance ainda</span></div><div class="timer" id="timer">--</div><div class="acoes"><button id="darLance" disabled>Dar lance + € 1 milhão</button><button id="passar" class="secundario" disabled>Passar</button></div><p id="mensagem" class="mensagem"></p></article>
+<aside><h2>Jogadores na sala</h2><ul id="participantes"></ul><h2 class="subtitulo">Meu elenco</h2><div id="meuElenco" class="elenco">Nenhum jogador contratado ainda.</div></aside></section>
+<section class="rodape-leilao"><div><h2>Histórico do leilão</h2><ul id="historico"></ul></div><button id="encerrar" class="secundario escondido">Encerrar leilão e simular partidas</button></section>
+<section id="resultados" class="resultados escondido"><h2>🏆 Simulação de partidas</h2><div id="placares"></div><button onclick="location.href='Sala.html'">Voltar às salas</button></section>
+</main></body></html>
